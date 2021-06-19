@@ -25,3 +25,18 @@ elif data<r:
     mc.postToChat("找錯了" )
 elif data>r:
     mc.postToChat("找錯了" )
+def LinnearSearch():
+    for i in range(10000001):
+        if i==r:
+            return i
+def BinarySearch():
+    low = 0
+    high = 10000000
+    while low>=high:
+        mid=(low+high)//2
+        if mid > r:
+            high=mid-1
+        elif mid <r:
+            low = mid+1
+        else:
+            return mid
